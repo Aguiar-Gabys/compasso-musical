@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compasso Musical - loja de instrumentos Musicais</title>
     <!--CSS interno-->
     <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f8f9fa;
-        color: #333333;
-        line-height: 1.6;
-    }
-
-        h1, h2, h3 {
-        color: #1a1a1a;  
-        margin-bottom: 1rem;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        p{
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #1a1a1a;
             margin-bottom: 1rem;
         }
 
-        a{
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
             text-decoration: none;
             color: inherit;
         }
 
-        ul{
+        ul {
             list-style: none;
         }
 
-        .cabecalhoPrincipal{
+        .cabecalhoPrincipal {
             background-color: #ffffff;
-            padding: 1,5rem 5%;
+            padding: 1, 5rem 5%;
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-            display: flex ; justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
         }
+
         .titulo {
-        font-size: 1.8rem; 
-        font-weight: bold; 
-        color: #d32f2f;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d32f2f;
         }
 
-        .ListaNavegacao{
+        .ListaNavegacao {
             display: flex;
             gap: 2rem;
         }
 
-        .LinkNav{
+        .LinkNav {
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
-        .LinkNav:hover{
+        .LinkNav:hover {
             color: #d32f2f;
         }
 
@@ -73,14 +78,14 @@
             font-weight: bold;
             margin-top: 1rem;
             transition: ;
-            }
+        }
 
         .botaoPrincipal:hover {
             background-color: #b71b1b;
             color: #ffffff;
         }
 
-        .container{
+        .container {
             padding: 4rem 5%;
         }
 
@@ -90,14 +95,14 @@
             margin-bottom: 2rem;
         }
 
-        .gradeInstrumentos{
+        .gradeInstrumentos {
             display: flex;
             gap: 2rem;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-        .cartaoInstrumento{
+        .cartaoInstrumento {
             background-color: #ffffff;
             border-radius: 8px;
             padding: 1.5rem;
@@ -107,15 +112,15 @@
             transition: transform 0.3s ease;
         }
 
-        .cartaoInstrumento:hover{
+        .cartaoInstrumento:hover {
             transform: translate(-5px);
         }
 
-        .nomeInstrumento{
+        .nomeInstrumento {
             color: #333333;
         }
 
-        .rodape{
+        .rodape {
             background-color: #1a1a1a;
             color: #ffffff;
             padding: 3rem 5%;
@@ -126,139 +131,144 @@
         }
 
         .rodape h2,
-        .rodape h3{
+        .rodape h3 {
             color: #ffffff;
         }
     </style>
 </head>
+
 <body>
     <!--Cabeçalho-->
-<header id="header" class="cabecalhoPrincipal">
-    <div id="logo">
-        <h1 class="titulo">Compasso Musical</h1>
-    </div>
-    <nav>
-        <ul class="ListaNavegacao">
-            <li>
-                <a href="#hero" class="LinkNav">Inicio</a>
-            </li>
-            <li>
-                <a href="#sobre" class="LinkNav">sobre</a>
-            </li>
-            <li>
-                <a href="#instrumentos" class="LinkNav">Instrumentos</a>
-            </li>
-            <li>
-                <a href="#depoimentos" class="LinkNav">Depoimento</a>
-            </li>
-            <li>
-                <a href="#contatos" class="LinkNav">Contato</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <header id="header" class="cabecalhoPrincipal">
+        <div id="logo">
+            <h1 class="titulo">Compasso Musical</h1>
+        </div>
+        <nav>
+            <ul class="ListaNavegacao">
+                <li>
+                    <a href="#hero" class="LinkNav">Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="LinkNav">sobre</a>
+                </li>
+                <li>
+                    <a href="#instrumentos" class="LinkNav">Instrumentos</a>
+                </li>
+                <li>
+                    <a href="#depoimentos" class="LinkNav">Depoimento</a>
+                </li>
+                <li>
+                    <a href="#contatos" class="LinkNav">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-<!--Conteúdo Principal-->
-<main>
-        <section id="#hero" class="secaoHero" style="background-color: #eceff1; text-align: center ; padding: 5rem 2rem; border-bottom: 4px solid #d32f2f;">
+    <!--Conteúdo Principal-->
+    <main>
+        <section id="#hero" class="secaoHero"
+            style="background-color: #eceff1; text-align: center ; padding: 5rem 2rem; border-bottom: 4px solid #d32f2f;">
             <h2 style="font-size: 3rem;color: #1a1a1a;">o som da sua vida começa aqui</h2>
             <p>
                 encontre as melhores marcas de violinos,trompetes ou violões
             </p>
-            <img src="banda.jpg"
-                alt="banda de rock  em um show usando os instrumentos musical da compasso musical" width="600">
+            <img src="banda.jpg" alt="banda de rock  em um show usando os instrumentos musical da compasso musical"
+                width="600">
             <br><br>
             <a href="#" class="botaoPrincipal">ver as nossas ofertas</a>
         </section>
 
         <!--seção sobre-->
         <section id="#sobre" class="container">
-            <h2 class="tituloSecao" >sobre a compasso musical</h2>
+            <h2 class="tituloSecao">sobre a compasso musical</h2>
             <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <p>
-                nossa loja nasceu da paixão pela musica. nossa missão é netregar qualidade sonora tanto para quem esta
-                prendendo os primeiros acordes quantos para msucios profissionais.
-            </p>
-            <ul style="text-align: left;display: inline-block;margin-top: 1rem;">
-                <li style="margin-bottom: 0.5rem">todos os instrumentos por nossa equipe tecnica.</li>
-                <li style="margin-bottom: 0.5rem">garantia estringida de fabrica.</li>
-                <li style="margin-bottom: 0.5rem">suporte de atendimento feito por musicos reais</li>
-            </ul>
+                <p>
+                    nossa loja nasceu da paixão pela musica. nossa missão é netregar qualidade sonora tanto para quem
+                    esta
+                    prendendo os primeiros acordes quantos para msucios profissionais.
+                </p>
+                <ul style="text-align: left;display: inline-block;margin-top: 1rem;">
+                    <li style="margin-bottom: 0.5rem">todos os instrumentos por nossa equipe tecnica.</li>
+                    <li style="margin-bottom: 0.5rem">garantia estringida de fabrica.</li>
+                    <li style="margin-bottom: 0.5rem">suporte de atendimento feito por musicos reais</li>
+                </ul>
             </div>
         </section>
 
         <!--instrumentos-->
         <section id="instrumentos" class="container" style="background-color: #eeeeeeee;">
             <h2 class="tituloSecao">cátalogo</h2>
-                <div class="gradeInstrumentos">
-                    <article class="cartaoInstrumento">
-                        <h3 class="nomeInstrumento">guitarra eletrica stratocaster</h3>
-                        <img src="https://images.unsplash.com/photo-1699716051078-eb299c55cc72"
-                            alt="imagem guitarra eletrica estratocaster" 
-                            width="200" 
-                            style="border-radius: 4px; margin-bottom: 1rem;">
-                        <p>
-                            <strong>marca: </strong>Fender
-                        </p>
-                        <p>
-                            guitarra clássica de alta performace ideal para rock blues.
-                        </p>
-                        <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
-                            <em>Preço: R$ 3.500,00</em>
-                        </p>
-                        <a href="#" class="botaoPrincipal">Adicionar ao carrinho</a>
-                    </article>
-        
-                    <article class="cartaoInstrumento">
-                        <h3 class="nomeInstrumento">kit bateria</h3>
-                        <img src="https://images.unsplash.com/photo-1620045445572-a5a2bb37876c"
-                            alt="imagem de uma bateria musical" 
-                            width="200"
-                            style="border-radius: 4px; margin-bottom: 1rem;">
-                        <p>
-                            <strong>marca: </strong>Pearl
-                        </p>
-                        <p>
-                            kit bateria ideal para voce
-                        </p>
-                        <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
-                            <em>Preço: R$ 22.500,00</em>
-                        </p>
-                        <a href="#" class="botaoPrincipal">Adicionar ao carrinho</a>
-                    </article>
+            <div class="gradeInstrumentos">
+                <article class="cartaoInstrumento">
+                    <h3 class="nomeInstrumento">guitarra eletrica stratocaster</h3>
+                    <img src="https://images.unsplash.com/photo-1699716051078-eb299c55cc72"
+                        alt="imagem guitarra eletrica estratocaster" width="200"
+                        style="border-radius: 4px; margin-bottom: 1rem;">
+                    <p>
+                        <strong>marca: </strong>Fender
+                    </p>
+                    <p>
+                        guitarra clássica de alta performace ideal para rock blues.
+                    </p>
+                    <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
+                        <em>Preço: R$ 3.500,00</em>
+                    </p>
+                    <a href="#" class="botaoPrincipal">Adicionar ao carrinho</a>
+                </article>
 
-                </div>
+                <article class="cartaoInstrumento">
+                    <h3 class="nomeInstrumento">kit bateria</h3>
+                    <img src="https://images.unsplash.com/photo-1620045445572-a5a2bb37876c"
+                        alt="imagem de uma bateria musical" width="200"
+                        style="border-radius: 4px; margin-bottom: 1rem;">
+                    <p>
+                        <strong>marca: </strong>Pearl
+                    </p>
+                    <p>
+                        kit bateria ideal para voce
+                    </p>
+                    <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
+                        <em>Preço: R$ 22.500,00</em>
+                    </p>
+                    <a href="#" class="botaoPrincipal">Adicionar ao carrinho</a>
+                </article>
+
+            </div>
         </section>
 
         <!-- seção depoimentos-->
         <section id="depoimentos" class="container">
             <h2 class="tituloSecao">O que os nossos clientes dizem</h2>
             <div style="display: flex;gap: 2rem; justify-content: center; flex-wrap: wrap;">
-                <blockquote style="background-color: #ffffff; padding: 2rem; border-left: 5px solid #d32f2f; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); max-width: 400px;">
+                <blockquote
+                    style="background-color: #ffffff; padding: 2rem; border-left: 5px solid #d32f2f; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); max-width: 400px;">
                     <p style="font-style: italic;">
                         "a bateria chegou super rápido aqui em cuiaba-MT e perfeitamente embalada, o som é incrível"
                     </p>
                     <footer style="margin-top: 1rem; font-weight: bold;">
-                    - <cite>Gabrielly Alexandra, baterista</cite>
+                        - <cite>Gabrielly Alexandra, baterista</cite>
                     </footer>
-                </blockquote >
+                </blockquote>
                 <br>
-                <blockquote style="background-color: #ffffff; padding: 2rem; border-left: 5px solid #d32f2f; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); max-width: 400px;">
+                <blockquote
+                    style="background-color: #ffffff; padding: 2rem; border-left: 5px solid #d32f2f; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); max-width: 400px;">
                     <p style="font-style: italic;">
-                        "comprei minha primeira guitarra no compasso musical, o atendimento me ajudou a escolher o modelo certo!"
+                        "comprei minha primeira guitarra no compasso musical, o atendimento me ajudou a escolher o
+                        modelo certo!"
                     </p>
                     <footer style="margin-top: 1rem; font-weight: bold;">
                         - <cite>Júlia, estudante de música</cite>
                     </footer>
                 </blockquote>
-                
+
             </div>
         </section>
 
         <!--seção contatos-->
         <section id="contatos" class="container" style="background-color: #eceff1;">
             <h2 class="tituloSecao">fale conosco </h2>
-            <div style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 10px 10px rgba(0, 0, 0, 0.3);">
+            <div
+                style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 10px 10px rgba(0, 0, 0, 0.3);">
                 <p style="text-align: center; margin-bottom: 2rem;">
                     Tem dúvidas sobre algum instrumentos? Mande uma mensagem ou venha nos visitar
                 </p>
@@ -267,122 +277,113 @@
                         Loja física: <strong>Centro histórico Cuiabá</strong>
                     </p>
                 </address>
-                <form action="#" >
+                <form action="#">
                     <label for="nome" style="font-weight: bold;">Nome completo</label>
-                    <input type="text"
-                    name="nome"
-                    id="nome" 
-                    placeholder="digite seu nome"
-                    required
-                    style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"
-                    >
-                    <label for="email" 
-                    style="font-weight: bold;">Email</label>
-                    <input type="email" 
-                    name="email" 
-                    id="email" 
-                    placeholder="digite seu email" 
-                    required style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
-                    <label for="departamento" 
-                    style="font-weight: bold;">Departamento</label>
-                    <select name="Departamento" id="departamento" style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                    <input type="text" name="nome" id="nome" placeholder="digite seu nome" required
+                        style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                    <label for="email" style="font-weight: bold;">Email</label>
+                    <input type="email" name="email" id="email" placeholder="digite seu email" required
+                        style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                    <label for="departamento" style="font-weight: bold;">Departamento</label>
+                    <select name="Departamento" id="departamento"
+                        style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
                         <option value="vendas">Vendas</option>
                         <option value="suporte">Suporte Tecnico</option>
                         <option value="financeiro">Financeiro</option>
                         <option value="sugestao">Sugestões</option>
                     </select>
                     <label for="mensagem" style="font-weight: bold;">Mensagem</label>
-                    <textarea name="mensagem" 
-                    id="mensagem" 
-                    placeholder="digite sua mensagem"
-                    rows="10" 
-                    style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"></textarea>
-                    <button type="submit" class="botaoPrincipal" style="width: 100% ; border: none; cursor: pointer;">Enviar mensagem</button>
+                    <textarea name="mensagem" id="mensagem" placeholder="digite sua mensagem" rows="10"
+                        style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"></textarea>
+                    <button type="submit" class="botaoPrincipal"
+                        style="width: 100% ; border: none; cursor: pointer;">Enviar mensagem</button>
                 </form>
             </div>
         </section>
 
     </main>
 
-<!--Rodapé Do Site-->
-<footer id="footer" class="rodape">
-<div style="flex-wrap: 1; min-width: 250px;">
-    <h2 class="titulo">Compasso Musical</h2>
-    <p>
-        Desde 2026 conectando Pessoas através da música.
-    </p>
-</div>
+    <!--Rodapé Do Site-->
+    <footer id="footer" class="rodape">
+        <div style="flex-wrap: 1; min-width: 250px;">
+            <h2 class="titulo">Compasso Musical</h2>
+            <p>
+                Desde 2026 conectando Pessoas através da música.
+            </p>
+        </div>
 
-<nav style="flex: 1; min-width: 150px;">
-    <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Mapa Do Site</h3>
-        <ul style="margin-top: 1rem; line-height: 2;">
-            <li >
-                <a href="#hero" class="LinkNav">Inicio</a>
-            </li>
-            <li>
-                <a href="#sobre" class="LinkNav">Sobre</a>
-            </li>
-            <li>
-                <a href="#instrumentos" class="LinkNav">Instrumentos</a>
-            </li>
-            <li>
-                <a href="#depoimentos" class="LinkNav">Depoimento</a>
-            </li>
-            <li>
-                <a href="#contatos" class="LinkNav">Contato</a>
-            </li>
-        </ul>
-</nav>
+        <nav style="flex: 1; min-width: 150px;">
+            <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Mapa Do Site
+            </h3>
+            <ul style="margin-top: 1rem; line-height: 2;">
+                <li>
+                    <a href="#hero" class="LinkNav">Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="LinkNav">Sobre</a>
+                </li>
+                <li>
+                    <a href="#instrumentos" class="LinkNav">Instrumentos</a>
+                </li>
+                <li>
+                    <a href="#depoimentos" class="LinkNav">Depoimento</a>
+                </li>
+                <li>
+                    <a href="#contatos" class="LinkNav">Contato</a>
+                </li>
+            </ul>
+        </nav>
 
-<nav style="flex: 1; min-width: 150px;">
-    <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Informações</h3>
-    <ul style="margin-top: 1rem; line-height: 2;">
-        <li>
-            <a href="#" class="LinkNav">Termos De Uso</a>
-        </li>
-        <li>
-            <a href="#" class="LinkNav">Política de Privacidade</a>
-        </li>
-        <li>
-            <a href="#" class="LinkNav">Trocas e Devoluções</a>
-        </li>
-    </ul>
-</nav>
+        <nav style="flex: 1; min-width: 150px;">
+            <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Informações
+            </h3>
+            <ul style="margin-top: 1rem; line-height: 2;">
+                <li>
+                    <a href="#" class="LinkNav">Termos De Uso</a>
+                </li>
+                <li>
+                    <a href="#" class="LinkNav">Política de Privacidade</a>
+                </li>
+                <li>
+                    <a href="#" class="LinkNav">Trocas e Devoluções</a>
+                </li>
+            </ul>
+        </nav>
 
-<div>
-    <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Siga-nos</h3>
-    <div style="display: flex; gap: 20px;">
-    <a href="">
-        <img src="instagram.png" alt="Instagram" style="height: 50px;">
-    </a>
-    <a href="">
-        <img src="facebook.png" alt="Facebook" style="height: 50px;">
-    </a>
-    <a href="">
-        <img src="Youtube.png" alt="Youtube" style="height: 50px;">
-    </a>
-    </div>
-</div>
+        <div>
+            <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Siga-nos</h3>
+            <div style="display: flex; gap: 20px;">
+                <a href="">
+                    <img src="instagram.png" alt="Instagram" style="height: 50px;">
+                </a>
+                <a href="">
+                    <img src="facebook.png" alt="Facebook" style="height: 50px;">
+                </a>
+                <a href="">
+                    <img src="Youtube.png" alt="Youtube" style="height: 50px;">
+                </a>
+            </div>
+        </div>
 
-<div style="flex: 1; min-width: 250px;">
-    <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Newsletter</h3>
-    <p style="margin-top: 1rem;">
-        Receba promoções exclusivas no seu e-mail.
-    </p>
-    <form action="#" style="display: flex; margin-top: 1rem;">
-        <input type="email" 
-        name="e-mail" 
-        id="e-mail" 
-        placeholder="Digite seu e-mail"
-        style="margin-top: 0; border-radius: 4px 0 0 4px; padding: 0.8rem;"> 
-        <button type="submit">Assinar</button>
-    </form>
-</div>
-
-</div>
-<p>
-    Copyright &copy;2026 Compasso Musical - Todos os diretos reservados. Site desenvolvido por Gabrielly Alexandra.
-</p>
-</footer>
+        <div style="flex: 1; min-width: 250px;">
+            <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Newsletter</h3>
+            <p style="margin-top: 1rem;">
+                Receba promoções exclusivas no seu e-mail.
+            </p>
+            <form action="#" style="display: flex; margin-top: 1rem;">
+                <input type="email" name="e-mail" id="e-mail" placeholder="Digite seu e-mail"
+                    style="margin-top: 0; border-radius: 4px 0 0 4px; padding: 0.8rem; outline: none; width: 70%;">
+                <button type="submit" class="botaoPrincipal"
+                    style="margin-top: 0; border-radius: 0 4px 4px 0; border: none; cursor: pointer;">Assinar</button>
+            </form>
+        </div>
+        <div style="width: 100%; text-align: center;margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #333333;">
+            <p>
+                Copyright &copy;2026 Compasso Musical - Todos os diretos reservados. Site desenvolvido por Gabrielly
+                Alexandra.
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
