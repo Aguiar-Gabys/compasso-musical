@@ -20,8 +20,8 @@
     }
 
         h1, h2, h3 {
-          color: #1a1a1a;  
-          margin-bottom: 1rem;
+        color: #1a1a1a;  
+        margin-bottom: 1rem;
         }
 
         p{
@@ -217,7 +217,7 @@
         </section>
 
         <!-- seção depoimentos-->
-         <section id="depoimentos" class="container">
+        <section id="depoimentos" class="container">
             <h2 class="tituloSecao">O que os nossos clientes dizem</h2>
             <div style="display: flex;gap: 2rem; justify-content: center; flex-wrap: wrap;">
                 <blockquote style="background-color: #ffffff; padding: 2rem; border-left: 5px solid #d32f2f; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); max-width: 400px;">
@@ -225,7 +225,7 @@
                         "a bateria chegou super rápido aqui em cuiaba-MT e perfeitamente embalada, o som é incrível"
                     </p>
                     <footer style="margin-top: 1rem; font-weight: bold;">
-                       - <cite>Gabrielly Alexandra, baterista</cite>
+                    - <cite>Gabrielly Alexandra, baterista</cite>
                     </footer>
                 </blockquote >
                 <br>
@@ -239,44 +239,54 @@
                 </blockquote>
                 
             </div>
-         </section>
+        </section>
 
-         <!--seção contatos-->
-         <section id="contatos">
-            <h2>fale conosco </h2>
-            <p>
-                Tem dúvidas sobre algum instrumentos? Mande uma mensagem ou venha nos visitar
-            </p>
-            <address>
-                <p>
-                    Loja física: <strong>Centro histórico Cuiabá</strong>
+        <!--seção contatos-->
+        <section id="contatos" class="container" style="background-color: #eceff1;">
+            <h2 class="tituloSecao">fale conosco </h2>
+            <div style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 10px 10px rgba(0, 0, 0, 0.3);">
+                <p style="text-align: center; margin-bottom: 2rem;">
+                    Tem dúvidas sobre algum instrumentos? Mande uma mensagem ou venha nos visitar
                 </p>
-            </address>
-            <form action="#">
-                <label for="nome">nome completo</label>
-                <br>
-                <input type="text" name="nome" id="nome" placeholder="digite seu nome" required>
-                <br><br>
-                <label for="email">email</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="digite seu email" required>
-                <br><br>
-                <label for="departamento">Departamento</label>
-                <br>
-                <select name="Departamento" id="departamento">
-                    <option value="vendas">Vendas</option>
-                    <option value="suporte">Suporte Tecnico</option>
-                    <option value="financeiro">Financeiro</option>
-                    <option value="sugestao">Sugestões</option>
-                </select>
-                <br><br>
-                <label for="mensagem">mensagem</label>
-                <br>
-                <textarea name="mensagem" id="mensagem" cols="10"></textarea>
-                <br><br>
-                <button type="submit">enviar mensagem</button>
-            </form>
-         </section>
+                <address style="text-align: center; margin-bottom: 2rem; font-style: normal;">
+                    <p>
+                        Loja física: <strong>Centro histórico Cuiabá</strong>
+                    </p>
+                </address>
+                <form action="#" >
+                    <label for="nome" style="font-weight: bold;">Nome completo</label>
+                    <input type="text"
+                    name="nome"
+                    id="nome" 
+                    placeholder="digite seu nome"
+                    required
+                    style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"
+                    >
+                    <label for="email" 
+                    style="font-weight: bold;">Email</label>
+                    <input type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="digite seu email" 
+                    required style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                    <label for="departamento" 
+                    style="font-weight: bold;">Departamento</label>
+                    <select name="Departamento" id="departamento" style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                        <option value="vendas">Vendas</option>
+                        <option value="suporte">Suporte Tecnico</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="sugestao">Sugestões</option>
+                    </select>
+                    <label for="mensagem" style="font-weight: bold;">Mensagem</label>
+                    <textarea name="mensagem" 
+                    id="mensagem" 
+                    placeholder="digite sua mensagem"
+                    rows="10" 
+                    style="width: 100%; padding: 0.6rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"></textarea>
+                    <button type="submit" class="botaoPrincipal" style="width: 100% ; border: none; cursor: pointer;">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
 
     </main>
 
