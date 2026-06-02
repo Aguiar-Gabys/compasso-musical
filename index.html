@@ -115,6 +115,20 @@
             color: #333333;
         }
 
+        .rodape{
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 3rem 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .rodape h2,
+        .rodape h3{
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -291,79 +305,83 @@
     </main>
 
 <!--Rodapé Do Site-->
-<footer>
-<div>
-    <h2>Compasso Musical</h2>
+<footer id="footer" class="rodape">
+<div style="flex-wrap: 1; min-width: 250px;">
+    <h2 class="titulo">Compasso Musical</h2>
     <p>
         Desde 2026 conectando Pessoas através da música.
     </p>
 </div>
 
-<nav>
-    <h3>Mapa Do Site</h3>
-        <ul>
-            <li>
-                <a href="">Inicio</a>
+<nav style="flex: 1; min-width: 150px;">
+    <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Mapa Do Site</h3>
+        <ul style="margin-top: 1rem; line-height: 2;">
+            <li >
+                <a href="#hero" class="LinkNav">Inicio</a>
             </li>
             <li>
-                <a href="">Sobre</a>
+                <a href="#sobre" class="LinkNav">Sobre</a>
             </li>
             <li>
-                <a href="">Instrumentos</a>
+                <a href="#instrumentos" class="LinkNav">Instrumentos</a>
             </li>
             <li>
-                <a href="">Depoimento</a>
+                <a href="#depoimentos" class="LinkNav">Depoimento</a>
             </li>
             <li>
-                <a href="">Contato</a>
+                <a href="#contatos" class="LinkNav">Contato</a>
             </li>
         </ul>
 </nav>
 
-<nav>
-    <h3>Informações</h3>
-    <ul>
+<nav style="flex: 1; min-width: 150px;">
+    <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Informações</h3>
+    <ul style="margin-top: 1rem; line-height: 2;">
         <li>
-            <a href="">Termos De Uso</a>
+            <a href="#" class="LinkNav">Termos De Uso</a>
         </li>
         <li>
-            <a href="">Política de Privacidade</a>
+            <a href="#" class="LinkNav">Política de Privacidade</a>
         </li>
         <li>
-            <a href="">Trocas e Devoluções</a>
+            <a href="#" class="LinkNav">Trocas e Devoluções</a>
         </li>
     </ul>
 </nav>
 
 <div>
-    <h3>Siga-nos</h3>
-    <div>
+    <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Siga-nos</h3>
+    <div style="display: flex; gap: 20px;">
     <a href="">
-        <img src="instagram.png" alt="Instagram">
+        <img src="instagram.png" alt="Instagram" style="height: 50px;">
     </a>
     <a href="">
-        <img src="facebook.png" alt="Facebook">
+        <img src="facebook.png" alt="Facebook" style="height: 50px;">
     </a>
     <a href="">
-        <img src="Youtube.png" alt="Youtube">
+        <img src="Youtube.png" alt="Youtube" style="height: 50px;">
     </a>
     </div>
 </div>
 
-<div>
-    <h3>Newsletter</h3>
-    <p>
+<div style="flex: 1; min-width: 250px;">
+    <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Newsletter</h3>
+    <p style="margin-top: 1rem;">
         Receba promoções exclusivas no seu e-mail.
     </p>
-    <form action="">
-        <input type="email" name="e-mail" id="e-mail" placeholder="Digite seu e-mail"> 
+    <form action="#" style="display: flex; margin-top: 1rem;">
+        <input type="email" 
+        name="e-mail" 
+        id="e-mail" 
+        placeholder="Digite seu e-mail"
+        style="margin-top: 0; border-radius: 4px 0 0 4px; padding: 0.8rem;"> 
         <button type="submit">Assinar</button>
     </form>
 </div>
 
 </div>
 <p>
-    Copyright &copy;2026 Compasso Musical - Todos os diretos reervados. Site desenvolvido por Gabrielly Alexandra.
+    Copyright &copy;2026 Compasso Musical - Todos os diretos reservados. Site desenvolvido por Gabrielly Alexandra.
 </p>
 </footer>
 </body>
